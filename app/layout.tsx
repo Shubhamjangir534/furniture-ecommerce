@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Playfair_Display, Inter, Noto_Sans_Devanagari } from "next/font/google";
-import "./globals.css";
+import "@/app/globals.css";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
 
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",
@@ -48,7 +50,9 @@ export default function RootLayout({
       <body
         className={`${playfairDisplay.variable} ${inter.variable} ${notoSansDevanagari.variable} antialiased`}
       >
+        <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
