@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap");
 
 :root {
   --primary: #7a1e1e;
@@ -6,6 +7,53 @@
   --background: #f4ede4;
   --accent: #c8a45d;
   --text: #1f1f1f;
+  
+  --color-secondary-container: #9cb4fe;
+  --color-on-primary-container: #ff8371;
+  --color-on-primary-fixed: #410000;
+  --color-surface-container-low: #fbf3e4;
+  --color-inverse-surface: #343026;
+  --color-surface-variant: #e9e2d3;
+  --color-surface-tint: #b22b1d;
+  --color-primary-fixed-dim: #ffb4a8;
+  --color-on-tertiary-container: #4e3d00;
+  --color-on-tertiary-fixed: #241a00;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-primary: #ffffff;
+  --color-on-secondary-container: #2a4486;
+  --color-tertiary-fixed: #ffe088;
+  --color-inverse-primary: #ffb4a8;
+  --color-error-container: #ffdad6;
+  --color-inverse-on-surface: #f8f0e1;
+  --color-surface-dim: #e1d9cb;
+  --color-on-secondary: #ffffff;
+  --color-surface-bright: #fff8ef;
+  --color-surface-container-high: #efe7d9;
+  --color-on-background: #1e1b13;
+  --color-outline: #8e706c;
+  --color-tertiary: #735c00;
+  --color-surface-container: #f5edde;
+  --color-on-tertiary: #ffffff;
+  --color-tertiary-fixed-dim: #e9c349;
+  --color-tertiary-container: #cba72f;
+  --color-on-surface: #1e1b13;
+  --color-on-primary-fixed-variant: #8f0f07;
+  --color-primary-new: #570000;
+  --color-on-tertiary-fixed-variant: #574500;
+  --color-outline-variant: #e2bfb9;
+  --color-secondary-new: #435b9f;
+  --color-primary-container: #800000;
+  --color-surface-container-highest: #e9e2d3;
+  --color-on-secondary-fixed-variant: #2a4386;
+  --color-on-error-container: #93000a;
+  --color-primary-fixed: #ffdad4;
+  --color-on-secondary-fixed: #00174a;
+  --color-surface: #fff8ef;
+  --color-on-surface-variant: #5a413d;
+  --color-error: #ba1a1a;
+  --color-secondary-fixed-dim: #b3c5ff;
+  --color-secondary-fixed: #dbe1ff;
+  --color-on-error: #ffffff;
 }
 
 @theme inline {
@@ -16,19 +64,67 @@
   --color-accent: var(--accent);
   --color-text: var(--text);
 
-  --font-heading: var(--font-heading);
-  --font-body: var(--font-body);
-  --font-hindi: var(--font-hindi);
-}
+  /* New Login Colors */
+  --color-secondary-container: var(--color-secondary-container);
+  --color-on-primary-container: var(--color-on-primary-container);
+  --color-on-primary-fixed: var(--color-on-primary-fixed);
+  --color-surface-container-low: var(--color-surface-container-low);
+  --color-inverse-surface: var(--color-inverse-surface);
+  --color-surface-variant: var(--color-surface-variant);
+  --color-surface-tint: var(--color-surface-tint);
+  --color-primary-fixed-dim: var(--color-primary-fixed-dim);
+  --color-on-tertiary-container: var(--color-on-tertiary-container);
+  --color-on-tertiary-fixed: var(--color-on-tertiary-fixed);
+  --color-surface-container-lowest: var(--color-surface-container-lowest);
+  --color-on-primary: var(--color-on-primary);
+  --color-on-secondary-container: var(--color-on-secondary-container);
+  --color-tertiary-fixed: var(--color-tertiary-fixed);
+  --color-inverse-primary: var(--color-inverse-primary);
+  --color-error-container: var(--color-error-container);
+  --color-inverse-on-surface: var(--color-inverse-on-surface);
+  --color-surface-dim: var(--color-surface-dim);
+  --color-on-secondary: var(--color-on-secondary);
+  --color-surface-bright: var(--color-surface-bright);
+  --color-surface-container-high: var(--color-surface-container-high);
+  --color-on-background: var(--color-on-background);
+  --color-outline: var(--color-outline);
+  --color-tertiary: var(--color-tertiary);
+  --color-surface-container: var(--color-surface-container);
+  --color-on-tertiary: var(--color-on-tertiary);
+  --color-tertiary-fixed-dim: var(--color-tertiary-fixed-dim);
+  --color-tertiary-container: var(--color-tertiary-container);
+  --color-on-surface: var(--color-on-surface);
+  --color-on-primary-fixed-variant: var(--color-on-primary-fixed-variant);
+  --color-design-primary: var(--color-primary-new);
+  --color-on-tertiary-fixed-variant: var(--color-on-tertiary-fixed-variant);
+  --color-outline-variant: var(--color-outline-variant);
+  --color-design-secondary: var(--color-secondary-new);
+  --color-primary-container: var(--color-primary-container);
+  --color-surface-container-highest: var(--color-surface-container-highest);
+  --color-on-secondary-fixed-variant: var(--color-on-secondary-fixed-variant);
+  --color-on-error-container: var(--color-on-error-container);
+  --color-primary-fixed: var(--color-primary-fixed);
+  --color-on-secondary-fixed: var(--color-on-secondary-fixed);
+  --color-surface: var(--color-surface);
+  --color-on-surface-variant: var(--color-on-surface-variant);
+  --color-error: var(--color-error);
+  --color-secondary-fixed-dim: var(--color-secondary-fixed-dim);
+  --color-secondary-fixed: var(--color-secondary-fixed);
+  --color-on-error: var(--color-on-error);
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    
-  }
-} */
+  /* Fonts mapped to variables defined in layout.tsx */
+  --font-headline: var(--font-headline), serif;
+  --font-body: var(--font-body), serif;
+  --font-label: var(--font-label), sans-serif;
+  --font-hindi: var(--font-hindi), serif;
+}
 
 body {
   background: var(--background);
   color: var(--text);
   font-family: var(--font-body);
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
 }
